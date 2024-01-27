@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400;600&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <main>
+        <div class="filter-wrapper">
+            <div id="courses">
+                <button class="current">PS1</button>
+                <button>PS2</button>
+                <button>PP1</button>
+                <button>PP2</button>
+                <button disabled>P++</button>
+                <button disabled>Front</button>
+            </div>
+            <div id="selectors">
+                <p>Модуль</p>
+                <input type="text" id="module-selector">
+                <p>Урок</p>
+                <input type="text" id="lesson-selector">
+                <button id="apply-selector">Применить</button>
+            </div>
+        </div>
+        <div id="message">
+            <p>Добрый день! Сегодня на занятии мы прошли тему</p>
+            <input type="text" id="lesson-title">
+            <br>
+            <p>Домашнее задание:</p>
+            <textarea type="text" id="homework"></textarea>
+        </div>
+        <textarea id="hiddenTextarea" readonly></textarea>
+        <div class="copyBtn-space">
+            <button id="copyBtn">Копировать</button>
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

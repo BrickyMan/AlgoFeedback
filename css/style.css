@@ -1,0 +1,120 @@
+* {
+	font-size: 16px;
+	font-family: 'Roboto Slab', serif;
+	margin: 0;
+    padding: 0;
+	box-sizing: border-box;
+}
+
+p {
+    line-height: 2;
+}
+
+input, textarea {
+	max-width: 100%;
+	display: inline;
+	padding: 3px;
+	border: 1px solid rgb(17, 17, 17);
+	border-radius: 5px;
+    resize: vertical;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+body     {
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(233, 233, 233);
+}
+
+main {
+	width: 100%;
+	max-width: 700px;
+	padding: 50px;
+	border: 1px solid rgb(190, 190, 190);
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background-color: rgb(255, 255, 255);
+}
+
+#selectors {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(190, 190, 190);
+}
+
+#selectors input {
+    width: 40px;
+    text-align: center;
+}
+
+#selectors button {
+    padding: 4px 16px;
+    /* border: 1px solid rgb(190, 190, 190); */
+}
+
+#courses {
+    margin-bottom: 10px;
+}
+
+#courses button {
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+}
+
+#courses button.current {
+    background-color: rgb(165, 72, 229);
+    color: rgb(255, 255, 255);
+}
+
+#message {
+    padding-top: 10px;
+}
+
+#message input, #message textarea {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.copyBtn-space {
+	margin-top: 50px;
+	display: flex;
+	justify-content: flex-end;
+}
+
+#copyBtn {
+	width: max-content;
+	padding: 8px 16px;
+	background-color: rgb(165, 72, 229);
+	color:rgb(255, 255, 255);
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: .3s ease;
+}
+
+#copyBtn:hover {
+	background-color: rgb(150, 65, 206);
+}
+
+#hiddenTextarea {
+	width: 0;
+	height: 0;
+	resize: none;
+	position: absolute;
+	top: -100px;
+	left: 0;
+}
